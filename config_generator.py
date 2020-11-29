@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 import commands
-import json
+import json,os
 
 import requests
 from requests.exceptions import ConnectTimeout
@@ -198,7 +198,9 @@ def gen_server():
             'keyFile'] = "/root/.acme.sh/{0}/{0}.key".format(
                 data['domain'], data['domain'])
         server['inbound']['streamSettings']['tlsSettings'] = server_tls
-
+        
+    if not os.path.isdir("/etc/v2ray/"):
+        os.makedirs("/etc/v2ray/")
     with open("/etc/v2ray/config.json", "w+") as f:
         f.write(json.dumps(server, indent=2))
 
