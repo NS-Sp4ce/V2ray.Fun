@@ -199,9 +199,9 @@ def gen_server():
                 data['domain'], data['domain'])
         server['inbound']['streamSettings']['tlsSettings'] = server_tls
         
-    if not os.path.isdir("/etc/v2ray/"):
-        os.makedirs("/etc/v2ray/")
-    with open("/etc/v2ray/config.json", "w+") as f:
+    if not os.path.isdir("/usr/local/etc/v2ray/"):
+        os.makedirs("/usr/local/etc/v2ray/")
+    with open("/usr/local/etc/v2ray/config.json", "w+") as f:
         f.write(json.dumps(server, indent=2))
 
 
