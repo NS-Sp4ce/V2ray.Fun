@@ -65,7 +65,7 @@ curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/inst
 
 #Install V2ray.Fun
 cd /usr/local/
-git clone https://github.com/FunctionClub/V2ray.Fun
+git clone https://github.com/NS-Sp4ce/V2ray.Fun
 
 #Generate Default Configurations
 cd /usr/local/V2ray.Fun/ && python init.py
