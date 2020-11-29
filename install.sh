@@ -61,7 +61,7 @@ fi
 curl https://get.acme.sh | sh
 
 #Install V2ray
-curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-dat-release.sh | bash
+curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh | bash
 
 #Install V2ray.Fun
 cd /usr/local/
